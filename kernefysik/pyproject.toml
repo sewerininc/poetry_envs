@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kernefysik"
+version = "0.1.0"
+description = "Env used for the course kernefysik II"
+authors = ["mikkelsewerin <mikkelsewerin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ipykernel = "^6.29.0"
+numpy = "^1.26.3"
+pandas = "^2.2.0"
+jupyter = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
