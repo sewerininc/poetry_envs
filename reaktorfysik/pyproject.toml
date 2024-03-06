@@ -13,6 +13,7 @@ matplotlib = "^3.8.2"
 pandas = "^2.2.0"
 ipykernel = "^6.29.0"
 radioactivedecay = "^0.4.22"
+jupyter = "^1.0.0"
 
 [tool.poetry.dependencies.openmc]
 path = "local-packages/openmc"
