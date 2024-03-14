@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" material="1" name="fuel" region="9 -10" universe="3"/>
+  <cell id="2" material="void" name="reflector1" region="11 -9" universe="3"/>
+  <cell id="3" material="void" name="reflector2" region="10 -12" universe="3"/>
+  <surface coeffs="-25.0" id="9" type="x-plane"/>
+  <surface coeffs="25.0" id="10" type="x-plane"/>
+  <surface boundary="vacuum" coeffs="-27.0" id="11" type="x-plane"/>
+  <surface boundary="vacuum" coeffs="27.0" id="12" type="x-plane"/>
+</geometry>
