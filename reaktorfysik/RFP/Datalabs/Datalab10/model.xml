@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material depletable="true" id="214" name="uo2" temperature="1200">
+      <density units="g/cm3" value="10.5"/>
+      <nuclide ao="0.04" name="U235"/>
+      <nuclide ao="0.96" name="U238"/>
+      <nuclide ao="2.0" name="O16"/>
+    </material>
+    <material id="215" name="zirconium" temperature="900">
+      <density units="g/cm3" value="6.6"/>
+      <nuclide ao="0.5145" name="Zr90"/>
+      <nuclide ao="0.1122" name="Zr91"/>
+      <nuclide ao="0.1715" name="Zr92"/>
+      <nuclide ao="0.1738" name="Zr94"/>
+      <nuclide ao="0.028" name="Zr96"/>
+    </material>
+    <material id="216" name="h2o">
+      <density units="g/cm3" value="0.37"/>
+      <nuclide ao="2.0" name="H1"/>
+      <nuclide ao="1.0" name="O16"/>
+      <sab name="c_H_in_H2O"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="285" material="214" name="fuel" region="-498" universe="72"/>
+    <cell id="286" material="void" name="air gap" region="498 -499" universe="72"/>
+    <cell id="287" material="215" name="clad" region="499 -500" universe="72"/>
+    <cell id="288" material="216" name="moderator" region="501 -502 503 -504 500" universe="72"/>
+    <surface coeffs="0.0 0.0 0.41" id="498" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.42" id="499" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 0.45" id="500" type="z-cylinder"/>
+    <surface boundary="reflective" coeffs="-1.475000000000001" id="501" type="x-plane"/>
+    <surface boundary="reflective" coeffs="1.475000000000001" id="502" type="x-plane"/>
+    <surface boundary="reflective" coeffs="-1.475000000000001" id="503" type="y-plane"/>
+    <surface boundary="reflective" coeffs="1.475000000000001" id="504" type="y-plane"/>
+  </geometry>
+  <settings>
+    <run_mode>eigenvalue</run_mode>
+    <particles>500</particles>
+    <batches>100</batches>
+    <inactive>10</inactive>
+    <source particle="neutron" strength="1.0" type="independent">
+      <space type="point">
+        <parameters>0 0 0</parameters>
+      </space>
+    </source>
+    <output>
+      <tallies>false</tallies>
+    </output>
+  </settings>
+  </model>
