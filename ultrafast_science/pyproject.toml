@@ -15,6 +15,9 @@ scipy = "^1.13.0"
 matplotlib = "^3.8.4"
 sympy = "^1.12"
 pathos = "^0.3.2"
+uncertainties = "^3.2.2"
+setuptools = "^75.1.0"
+astropy = "^6.1.4"
 
 
 [build-system]

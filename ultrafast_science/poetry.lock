@@ -110,6 +110,74 @@ doc = ["doc8", "sphinx (>=7.0.0)", "sphinx-autobuild", "sphinx-autodoc-typehints
 test = ["dateparser (==1.*)", "pre-commit", "pytest", "pytest-cov", "pytest-mock", "pytz (==2021.1)", "simplejson (==3.*)"]
 
 [[package]]
+name = "astropy"
+version = "6.1.4"
+description = "Astronomy and astrophysics core library"
+optional = false
+python-versions = ">=3.10"
+files = [
+    {file = "astropy-6.1.4-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:7954cdfea00445ed186431888ec8ab12d9e3adfdf316038c44009f57438e6389"},
+    {file = "astropy-6.1.4-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:c0298f0e0d57cc61915a4438d54e47b4517ff6c7c5144ae4679077cfb0826d0b"},
+    {file = "astropy-6.1.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:2491dc9a8f9c046b808995b2e3dc9ad8349c83042729b26c7907b5f7fbc53fd4"},
+    {file = "astropy-6.1.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:22cc40cb137bbd777389d96871d84438537d01e1cd1dd1fc3dca374b4ece3200"},
+    {file = "astropy-6.1.4-cp310-cp310-musllinux_1_2_x86_64.whl", hash = "sha256:ec13a67ffac3d2b79ab2b725b16943133951cdd6833ab8941db798bc4de2da49"},
+    {file = "astropy-6.1.4-cp310-cp310-win32.whl", hash = "sha256:dbd7addf8c79d50e18eeef6c85aee7dd009f2e80756bc4d9b866592eeaca3577"},
+    {file = "astropy-6.1.4-cp310-cp310-win_amd64.whl", hash = "sha256:86e045e7ddfbfc500d015a9a6603be446c492c68fc019e69274b26e098aae50c"},
+    {file = "astropy-6.1.4-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:601d8a9a8d44f45064d2d8cc963cecf3949d3fbc10c9b6412c241cdc0c686b2c"},
+    {file = "astropy-6.1.4-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:cfc23b9e5e899f66f1377dc1116c247e6c7d0f92623ca115ad084a297414de03"},
+    {file = "astropy-6.1.4-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:52683072d106162ca124e09f2f132de58ca9756e04c25ebd45d56cbdd6feb8f7"},
+    {file = "astropy-6.1.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:50ab8d8097df76e33b56ab429d07240df6f273ccd267949ff99f8df79c7fcc42"},
+    {file = "astropy-6.1.4-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:81152825e80a03562cf2b95164c0ae7f56cd3521208a13221b3afa683c1469a6"},
+    {file = "astropy-6.1.4-cp311-cp311-win32.whl", hash = "sha256:af49e0a80ee6243727f449a6d8c99e711b2a4fdd1701d92c42964cd3e01a3490"},
+    {file = "astropy-6.1.4-cp311-cp311-win_amd64.whl", hash = "sha256:b2fa9e1031eb83bee2d0b29f3e4d85a9d8b38ecb1b759a0ffbb8145fe8685d0e"},
+    {file = "astropy-6.1.4-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:cf4ce31973dd18da522bb8f0fac91685ab1fcf21ca81251c79b09ef27d2b0d8f"},
+    {file = "astropy-6.1.4-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:9d4d10d964bfd110751fd47132af5227807d2beca85669b3d00d29cf5bae167d"},
+    {file = "astropy-6.1.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:26c6cc099a312aaf0e473a4ea2ac4279f79ef53c8413e8259758d0f5930b4745"},
+    {file = "astropy-6.1.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d3085e201e9d4bd223a543f7e2c0810dc873ea6a81bbdf06b5a987aa10e09bce"},
+    {file = "astropy-6.1.4-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:a1598720ac43875e602f1fe9766133ab67d50164047b5ed18f5e35d2fa69e914"},
+    {file = "astropy-6.1.4-cp312-cp312-win32.whl", hash = "sha256:59576f354772c448300438acc910b5a37b9d15ddfaa5c942746a7253a6c7765f"},
+    {file = "astropy-6.1.4-cp312-cp312-win_amd64.whl", hash = "sha256:27496654ae2e672fa13eee9200caa776f47fbdce9ece55adcfe1d7e37e80341e"},
+    {file = "astropy-6.1.4-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:024cbba2b20d6abf50395669a010b1c026a0b966ba2292addd354163b0b44e55"},
+    {file = "astropy-6.1.4-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:aeec3aa6c12f613b2609dfbf9bac355b5e64446e67643637ee449bdcf583f5e2"},
+    {file = "astropy-6.1.4-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f1ed2dfb1551b2f140ca636c0156ab6a6a13f4202b7f3bc06fa739058f311d18"},
+    {file = "astropy-6.1.4-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fa1a48e1dbd8072b3ef8a94334bc5344bf33bfd2b1b0236ca02eaa2cc3ca4b90"},
+    {file = "astropy-6.1.4-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:b23cb881cf1fa0795b92ab2d86b04339a0a38b336e3a391fd050b6caf695b01b"},
+    {file = "astropy-6.1.4-cp313-cp313-win32.whl", hash = "sha256:b28752d9515dac72358bce58214ef4bae89bfc4af548c98f6052ff91b38e93ee"},
+    {file = "astropy-6.1.4-cp313-cp313-win_amd64.whl", hash = "sha256:048ae0883db33f94dea03800211d2e4a0aacaf8d0f0640196815d9d1298b7449"},
+    {file = "astropy-6.1.4.tar.gz", hash = "sha256:361558e2b093a99bebe69f1fd47fac86a192607a4c16ed39ba0a800b2ab60c34"},
+]
+
+[package.dependencies]
+astropy-iers-data = ">=0.2024.8.27.10.28.29"
+numpy = ">=1.23"
+packaging = ">=19.0"
+pyerfa = ">=2.0.1.1"
+PyYAML = ">=3.13"
+
+[package.extras]
+all = ["asdf-astropy (>=0.3)", "astropy[recommended]", "astropy[typing]", "beautifulsoup4", "bleach", "bottleneck", "certifi", "dask[array]", "fsspec[http] (>=2023.4.0)", "h5py", "html5lib", "ipython (>=4.2)", "jplephem", "mpmath", "pandas", "pre-commit", "pyarrow (>=7.0.0)", "pytest (>=7.0)", "pytz", "s3fs (>=2023.4.0)", "sortedcontainers"]
+docs = ["Jinja2 (>=3.1.3)", "astropy[recommended]", "matplotlib (>=3.9.1)", "numpy (<2.0)", "pytest (>=7.0)", "sphinx", "sphinx-astropy[confv2] (>=1.9.1)", "sphinx-changelog (>=1.2.0)", "sphinx-design", "sphinxcontrib-globalsubs (>=0.1.1)", "tomli"]
+recommended = ["matplotlib (>=3.5.0,!=3.5.2)", "scipy (>=1.8)"]
+test = ["pytest (>=7.0)", "pytest-astropy (>=0.10)", "pytest-astropy-header (>=0.2.1)", "pytest-doctestplus (>=0.12)", "pytest-xdist", "threadpoolctl"]
+test-all = ["array-api-strict", "astropy[test]", "coverage[toml]", "ipython (>=4.2)", "objgraph", "sgp4 (>=2.3)", "skyfield (>=1.20)"]
+typing = ["typing-extensions (>=4.0.0)"]
+
+[[package]]
+name = "astropy-iers-data"
+version = "0.2024.10.7.0.32.46"
+description = "IERS Earth Rotation and Leap Second tables for the astropy core package"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "astropy_iers_data-0.2024.10.7.0.32.46-py3-none-any.whl", hash = "sha256:4b5ce3e3c8ac17632a28a35f4b847d8a8db084509f5f0db3238140dbb5149eae"},
+    {file = "astropy_iers_data-0.2024.10.7.0.32.46.tar.gz", hash = "sha256:349ff09294f03112d9391a5ad660135bf2fcef7de411a52c20bcf8598fb029d1"},
+]
+
+[package.extras]
+docs = ["pytest"]
+test = ["hypothesis", "pytest", "pytest-remotedata"]
+
+[[package]]
 name = "asttokens"
 version = "2.4.1"
 description = "Annotate AST trees with source code positions"
@@ -1994,6 +2062,33 @@ files = [
 ]
 
 [[package]]
+name = "pyerfa"
+version = "2.0.1.4"
+description = "Python bindings for ERFA"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "pyerfa-2.0.1.4-cp39-abi3-macosx_10_9_x86_64.whl", hash = "sha256:ff112353944bf705342741f2fe41674f97154a302b0295eaef7381af92ad2b3a"},
+    {file = "pyerfa-2.0.1.4-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:900b266a3862baa9560d6b1b184dcc14e0e76d550ff70d32336d3989b2ed18ca"},
+    {file = "pyerfa-2.0.1.4-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:610d2bc314e140d876b93b1287c7c81685434873c8700cc3e1596193f77d1071"},
+    {file = "pyerfa-2.0.1.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7e4508dd7ffd7b27b7f67168643764454887e990ca9e4584824f0e3ab5884c0f"},
+    {file = "pyerfa-2.0.1.4-cp39-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:83a44ba84ebfc3244412ecbf1065c087c382da84f1c3eee1f2a0638d9046ac96"},
+    {file = "pyerfa-2.0.1.4-cp39-abi3-win32.whl", hash = "sha256:46d3bed0ac666f08d8364b34a00b8c6595358d6c4f4532da8d13fac0e5227baa"},
+    {file = "pyerfa-2.0.1.4-cp39-abi3-win_amd64.whl", hash = "sha256:bc3cf45967ac1af77a777deb050fb08bbc75256dd97ca6005e4d385358b7af40"},
+    {file = "pyerfa-2.0.1.4-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:88a8d0f3608a66871615bd168fcddf674dce9f7568c239a03cf8d9936161d032"},
+    {file = "pyerfa-2.0.1.4-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9045e9f786c76cb55da86ada3405c378c32b88f6e3c6296cb288496ab374b068"},
+    {file = "pyerfa-2.0.1.4-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:39cf838c9a21e40d4e3183bead65b3ce6af763c4a727f87d84909c9be7d3a33c"},
+    {file = "pyerfa-2.0.1.4.tar.gz", hash = "sha256:acb8a6713232ea35c04bc6e40ac4e461dfcc817d395ef2a3c8051c1a33249dd3"},
+]
+
+[package.dependencies]
+numpy = ">=1.19"
+
+[package.extras]
+docs = ["sphinx-astropy (>=1.3)"]
+test = ["pytest", "pytest-doctestplus (>=0.7)"]
+
+[[package]]
 name = "pygments"
 version = "2.17.2"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -2531,6 +2626,26 @@ objc = ["pyobjc-framework-Cocoa"]
 win32 = ["pywin32"]
 
 [[package]]
+name = "setuptools"
+version = "75.1.0"
+description = "Easily download, build, install, upgrade, and uninstall Python packages"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "setuptools-75.1.0-py3-none-any.whl", hash = "sha256:35ab7fd3bcd95e6b7fd704e4a1539513edad446c097797f2985e0e4b960772f2"},
+    {file = "setuptools-75.1.0.tar.gz", hash = "sha256:d59a21b17a275fb872a9c3dae73963160ae079f1049ed956880cd7c09b120538"},
+]
+
+[package.extras]
+check = ["pytest-checkdocs (>=2.4)", "pytest-ruff (>=0.2.1)", "ruff (>=0.5.2)"]
+core = ["importlib-metadata (>=6)", "importlib-resources (>=5.10.2)", "jaraco.collections", "jaraco.functools", "jaraco.text (>=3.7)", "more-itertools", "more-itertools (>=8.8)", "packaging", "packaging (>=24)", "platformdirs (>=2.6.2)", "tomli (>=2.0.1)", "wheel (>=0.43.0)"]
+cover = ["pytest-cov"]
+doc = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "pyproject-hooks (!=1.1)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier", "towncrier (<24.7)"]
+enabler = ["pytest-enabler (>=2.2)"]
+test = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "ini2toml[lite] (>=0.14)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "jaraco.test", "packaging (>=23.2)", "pip (>=19.1)", "pyproject-hooks (!=1.1)", "pytest (>=6,!=8.1.*)", "pytest-home (>=0.5)", "pytest-perf", "pytest-subprocess", "pytest-timeout", "pytest-xdist (>=3)", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel (>=0.44.0)"]
+type = ["importlib-metadata (>=7.0.2)", "jaraco.develop (>=7.21)", "mypy (==1.11.*)", "pytest-mypy"]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -2715,6 +2830,23 @@ files = [
 ]
 
 [[package]]
+name = "uncertainties"
+version = "3.2.2"
+description = "calculations with values with uncertainties, error propagation"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "uncertainties-3.2.2-py3-none-any.whl", hash = "sha256:fd8543355952f4052786ed4150acaf12e23117bd0f5bd03ea07de466bce646e7"},
+    {file = "uncertainties-3.2.2.tar.gz", hash = "sha256:e62c86fdc64429828229de6ab4e11466f114907e6bd343c077858994cc12e00b"},
+]
+
+[package.extras]
+all = ["uncertainties[arrays,doc,test]"]
+arrays = ["numpy"]
+doc = ["python-docs-theme", "sphinx", "sphinx-copybutton"]
+test = ["pytest", "pytest-cov"]
+
+[[package]]
 name = "uri-template"
 version = "1.3.0"
 description = "RFC 6570 URI Template Processor"
@@ -2812,4 +2944,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "dfdd348b8c8ad0d401de36172b8895e43c27598d2ad48e03325e907de527a049"
+content-hash = "a1f2576d932e299dbaed47a07b66d47ef6ddd411b717867aa39706e5c9eab873"

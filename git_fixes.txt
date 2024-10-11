@@ -1,0 +1,10 @@
+Git fixes  
+
+# To add key again
+! YOU HAVE TO BE IN THE STD FOLDER so cd before these
+
+This  ssh-add ~/.ssh/id_rsa
+
+Then
+ssh -T git@github.com   
+Nice 
